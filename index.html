@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class="todo-container">
+    <h1>TO DO - LIST</h1>
+    <input type="text" id="taskContent" placeholder="Enter a new task">
+    <select id="taskPriority">
+      <option value="low">LOW</option>
+      <option value="medium">MEDIUM</option>
+      <option value="high">HIGH</option>
+    </select>
+    <button class="add-task-button" id="addTask" onclick="addNewTask()">ADD TASK</button>
+    <div class="other-options">
+      <button class="clear-all-button" id="clearAllTask" onclick="deleteAllTasks()">Clear All Tasks</button>
+      <select class="filter-options" id="fil">
+        <option value="low">LOW</option>
+        <option value="medium">MEDIUM</option>
+        <option value="high">HIGH</option>
+        <option value="Completed">Completed</option>
+        <option value="InCompleted">InCompleted</option>
+        <option value="all">All</option>
+      </select>
+      <button id="Filt" onclick="filterTasklist()">Filter</button>
+
+    </div>
+    <div id="taskList" class="toDoList">
+
+    </div>
+  </div>
+
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
